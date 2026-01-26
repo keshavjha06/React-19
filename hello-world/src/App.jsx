@@ -9,10 +9,24 @@ import { CandidateProfile } from './CandidateProfile'
 import { Product } from './Product'
 import { Greeting } from './Greeting'
 import { CardWrapper } from './CardWrapper'
+import { UserDetails } from './UserDetails'
 
 function App() {
   return (
     <div>
+      <UserDetails
+        name="John Doe"
+        isOnline={true}
+        isPremium={true}
+        isNewUser={true}
+        role='admin'
+      />
+      <UserDetails
+        name="Jane Doe"
+        isOnline={true}
+        hideOffline={true}
+        role='vip'
+      />
       <CardWrapper title="User Profile">
         <p>John Doe</p>
         <p>batman@jl.com</p>
