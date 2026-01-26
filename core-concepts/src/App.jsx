@@ -15,10 +15,13 @@ import { NameList } from './NameList'
 import { TodoList } from './TodoList'
 import { Alert } from './Alert'
 import { NewButton } from './NewButton'
+import { CustomButton } from './CustomButton'
 
 function App() {
   return (
     <div>
+      <CustomButton text="Click Me" />
+      <CustomButton text="Bookmark" />
       <Alert>Your changes have been saved!</Alert>
       <Alert type="error">Something went wrong!</Alert>
       <NewButton />
