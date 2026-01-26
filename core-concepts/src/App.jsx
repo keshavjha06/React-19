@@ -16,10 +16,16 @@ import { TodoList } from './TodoList'
 import { Alert } from './Alert'
 import { NewButton } from './NewButton'
 import { CustomButton } from './CustomButton'
+import { Contact } from './Contact'
+import { Newsletter } from './Newsletter'
+import { Menu } from './Menu'
 
 function App() {
   return (
     <div>
+      <Menu />
+      <Contact />
+      <Newsletter />
       <CustomButton text="Click Me" />
       <CustomButton text="Bookmark" />
       <Alert>Your changes have been saved!</Alert>
